@@ -625,8 +625,6 @@ int APS2::write_macip_flash(const uint64_t & mac,
 	uint32_t dhcp_int;
 
 	dhcp_int = (dhcp_enable) ? 1 : 0;
-	cout << "Writing IP_ADDR: " << ip_addr << endl;
-	cout << "Writing DHCP: " << dhcp_int << endl;
 	vector<uint32_t> data = {static_cast<uint32_t>(mac >> 16),
 		                     static_cast<uint32_t>((mac & 0xffff) << 16),
 		                     ip_addr,
