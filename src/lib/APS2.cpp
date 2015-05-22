@@ -640,7 +640,6 @@ int APS2::write_macip_flash(const uint64_t & mac,
 		return -1;
 	}
 	if (get_dhcp_enable() != dhcp_enable) {
-		cout << "DHCP write failed" << endl;
 		return -1;
 	}
 	return 0;
