@@ -386,8 +386,6 @@ APS2_STATUS set_dhcp_enable(const char* deviceSerial, const int enable) {
 	return aps2_call(deviceSerial, &APS2::set_dhcp_enable, enable);
 }
 
-
-
 int run_DAC_BIST(const char* deviceSerial, const int dac, int16_t* data, unsigned int length, uint32_t* results){
 	vector<int16_t> testVec(data, data+length);
 	vector<uint32_t> tmpResults;
